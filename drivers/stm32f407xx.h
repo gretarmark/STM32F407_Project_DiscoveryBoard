@@ -24,9 +24,9 @@
 // Note that the numbers below are HEX numbers.
 #define FLASH_BASEADDR 					0x08000000U 	// p. 71 eða table 5 - Main Memory
 #define SRAM1_BASEADDR 					0x20000000U 	// p. 71 - Main internal SRAM1 (112 KB)
-#define SRAM2_BASEADDR 					0x2001C000U		// p. 71 - Auxiliary internal SRAM2 (16 KB)
-#define ROM_BASEADDR					0x1FFF0000U		// p. 71 - System Memory (30 kbytes)
-#define SRAM 							SRAM1_BASEADDR	// SRAM1 is SRAM (base SRAM)
+#define SRAM2_BASEADDR 					0x2001C000U	// p. 71 - Auxiliary internal SRAM2 (16 KB)
+#define ROM_BASEADDR					0x1FFF0000U	// p. 71 - System Memory (30 kbytes)
+#define SRAM 						SRAM1_BASEADDR	// SRAM1 is SRAM (base SRAM)
 
 // Calculate base address C macros for MCU
 // SRAM2 base address - SRAM1 is 112 KB, so after 112 KB the SRAM2 appears.
@@ -120,27 +120,27 @@ typedef struct {
 	uint32_t RESERVED0;		// RESERVED - Address Offset: 0x1C
 	__vo uint32_t APB1RSTR;		// to do - Address Offset: 0x20
 	__vo uint32_t APB2RSTR;		// to do - Address Offset: 0x24
-	uint32_t RESERVED1[2];		// to do - Address Offset: 0x28 and 0x2C
+	uint32_t RESERVED1[2];		// RESERVED - Address Offset: 0x28 and 0x2C
 	__vo uint32_t AHB1ENR;		// to do - Address Offset: 0x30
 	__vo uint32_t AHB2ENR;		// to do - Address Offset: 0x34
 	__vo uint32_t AHB3ENR;		// to do - Address Offset: 0x38
-	uint32_t RESERVED2;		// to do - Address Offset: 0x3C
+	uint32_t RESERVED2;		// RESERVED - Address Offset: 0x3C
 	__vo uint32_t APB1ENR;		// to do - Address Offset: 0x40
 	__vo uint32_t APB2ENR;		// to do - Address Offset: 0x44
-	uint32_t RESERVED3[2];		// to do - Address Offset: 0x48 and 0x4C
-	__vo uint32_t AHB1LPENR;		// to do - Address Offset: 0x50
-	__vo uint32_t AHB2LPENR;		// to do - Address Offset: 0x54
-	__vo uint32_t AHB3LPENR;		// to do - Address Offset: 0x58
-	uint32_t RESERVED4;		// to do - Address Offset: 0x5C
-	__vo uint32_t APB1LPENR;		// to do - Address Offset: 0x60
-	__vo uint32_t APB2LPENR;		// to do - Address Offset: 0x64
-	uint32_t RESERVED5[2];		// to do - Address Offset: 0x68 & 0x6C
+	uint32_t RESERVED3[2];		// RESERVED - Address Offset: 0x48 and 0x4C
+	__vo uint32_t AHB1LPENR;	// to do - Address Offset: 0x50
+	__vo uint32_t AHB2LPENR;	// to do - Address Offset: 0x54
+	__vo uint32_t AHB3LPENR;	// to do - Address Offset: 0x58
+	uint32_t RESERVED4;		// RESERVED - Address Offset: 0x5C
+	__vo uint32_t APB1LPENR;	// to do - Address Offset: 0x60
+	__vo uint32_t APB2LPENR;	// to do - Address Offset: 0x64
+	uint32_t RESERVED5[2];		// RESERVED - Address Offset: 0x68 & 0x6C
 	__vo uint32_t BDCR;		// to do - Address Offset: 0x70
 	__vo uint32_t CSR;		// to do - Address Offset: 0x74
-	uint32_t RESERVED6[2];		// to do - Address Offset: 0x78 & 0x7C
+	uint32_t RESERVED6[2];		// RESERVED - Address Offset: 0x78 & 0x7C
 	__vo uint32_t SSCGR;		// to do - Address Offset: 0x80
-	__vo uint32_t PLLI2SCFGR;		// to do - Address Offset: 0x84
-	__vo uint32_t PLLSAICFGR;		// to do - Address Offset: 0x88
+	__vo uint32_t PLLI2SCFGR;	// to do - Address Offset: 0x84
+	__vo uint32_t PLLSAICFGR;	// to do - Address Offset: 0x88
 	__vo uint32_t DCKCFGR;		// to do - Address Offset: 0x8C
 	__vo uint32_t CKGATENR;		// to do - Address Offset: 0x90
 	__vo uint32_t DCKCFGR2;		// to do - Address Offset: 0x94
