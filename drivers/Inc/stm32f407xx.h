@@ -62,7 +62,7 @@
 #define GPIOH_BASEADDR 					(AHB1PERIPH_BASEADDR + 0x1C00)	//
 #define GPIOI_BASEADDR 					(AHB1PERIPH_BASEADDR + 0x2000)	//
 
-#define RCC_BASEADDR					(AHB1PERIPH_BASEADDR + 3800) // RCC is connected to AHB1 bus. 0x4002 3800 - 0x4002 3BFF
+#define RCC_BASEADDR					(AHB1PERIPH_BASEADDR + 0x3800) // RCC is connected to AHB1 bus. 0x4002 3800 - 0x4002 3BFF
 
 // Base addresses of peripherals which are hanging on APB1 bus
 									  //(APB1PERIPH_BASEADDR + OFFSET)
